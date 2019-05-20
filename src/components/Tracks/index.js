@@ -9,12 +9,12 @@ function duration(millis) {
 const Tracks = (props) => (
     props.results != '' && props.results.tracks.items.map((result, i) => {
         return (
-            <div class="media p-3" key={i}>
-            {result.album.images == "" ? <img src="https://st2.depositphotos.com/2923481/7931/i/950/depositphotos_79311902-stock-photo-lp-platinum-album.jpg" width="120" class="mr-3" alt="img" />
-            : <img src={result.album.images[0].url} width="120" class="mr-3" alt="img" />}
+            <div className="media p-3" key={i}>
+            {result.album.images == "" ? <img src="https://st2.depositphotos.com/2923481/7931/i/950/depositphotos_79311902-stock-photo-lp-platinum-album.jpg" width="120" className="mr-3" alt="img" />
+            : <img src={result.album.images[0].url} width="120" className="mr-3" alt="img" />}
             
-            <div class="media-body text-light">
-                <h5 class="mt-0">{result.name}</h5>  
+            <div className="media-body text-light">
+                <h5 className="mt-0">{result.name}</h5>  
                 <h6>{result.album.name}</h6>   
                 {result.artists.map((artist, i) => {
                     return <span key={i} className="text-light">{artist.name} | </span>

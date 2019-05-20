@@ -23,6 +23,15 @@
     color: white
 }
 
+.nav-item a {
+    color: white;
+    font-weight: 500
+}
+
+.nav-item a:hover {
+    border: solid 0px transparent
+}
+
 .level {
     padding: 5px;
     color: black;
